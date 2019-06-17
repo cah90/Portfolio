@@ -1,0 +1,124 @@
+.container-flex {
+    font-family: 'Montserrat', sans-serif;
+    color: #495057;
+
+}
+
+h1,h2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+/* Lateral Menu */
+
+.lateral-menu {
+    background-color: #fe5f55;
+    text-align: center;
+
+}
+
+.lateral-menu img {
+    border-radius: 100%;
+    width: 180px;
+    border: 10px solid #fe8f88;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-right: 40px;
+}
+
+li a {
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: #fecfcc;
+}
+
+li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* About Section */
+
+.about h1 {
+    font-size: 5.6rem;
+    line-height: 5.5rem;
+    margin: 300px 0 60px ;
+}
+
+.about p {
+    font-size: 1.15rem;
+    text-align: justify;
+}
+
+.social-icon {
+    font-size: 3rem;
+    margin-bottom: 190px;
+    color: #495057;
+}
+
+.social-icon:hover {
+    color: #fe5f55;
+}
+
+.fa-linkedin {
+    
+}
+
+.fa-github-square {
+    margin-left: 5px;
+}
+
+/* Skill Section */
+
+.skills h2 {
+    font-size: 3.5rem;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    font-weight: 400;
+}
+
+.skills td {
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+.skills table {
+    margin-bottom: 200px;
+}
+
+/* Projects Section */
+
+.projects h2 {
+    font-size: 3.5rem;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    font-weight: 400;
+}
+
+/* Contact Section */
+
+.contact h2 {
+    font-size: 3.5rem;
+    margin-top: 400px;
+    margin-bottom: 90px;
+    font-weight: 400;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    text-align: right;
+    font-size: 0.8rem;
+}
