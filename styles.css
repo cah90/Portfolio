@@ -131,6 +131,7 @@ hr {
 
 .skills h2 {
     margin-bottom: 100px;
+    margin-top: 300px;
 }
 
 .skills td {
@@ -157,6 +158,7 @@ hr {
 
 .projects h2 {
     margin-bottom: 100px;
+    margin-top: 300px;
 }
 
 /* Contact Section */
@@ -164,10 +166,12 @@ hr {
 .contact {
     width: 80%;
     margin: 30px 30px;
+    border: 1px solid red;
 }
 
 .contact h2 {
     margin-bottom: 90px;
+    margin-top: 300px;
 }
 
 .contact input, .contact textarea, .contact button {
@@ -182,6 +186,28 @@ hr {
 
 .contact label {
     font-size: 1.5rem;
+
+}
+
+.contact input+label, .contact textarea+label {
+    position: absolute;
+    left: 20px;
+    transition: transform 200ms ease;
+  
+    /* You have to use this to make it clickable through*/
+    pointer-events: none;
+}
+
+.contact input:focus+label, .contact textarea:focus+label, 
+.contact input+label.freeze, .contact textarea+label.freeze {
+    transform: translateY(-1.2rem);
+    color: #bb7171;
+    font-size: 1rem;
+}
+
+.contact .form-group {
+    position: relative;
+    margin-bottom: 5px;
 }
 
 .contact textarea {
@@ -203,6 +229,10 @@ hr {
     background: #ddb8b8;
     text-decoration: none;
 }
+
+.contact input:focus, .contact textarea:focus{
+    outline: none;
+  }
 
 
 /* Footer */
