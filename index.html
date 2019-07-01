@@ -26,7 +26,7 @@
 
     <body>
         <div class="container">
-            <div class="sideNav">
+            <div class="sideNav" id="sideNav">
                 <img src="images/cassia.jpeg" alt="profile photo">
                 <div class="myLinks">
                     <a href="#about">About</a>
@@ -36,15 +36,18 @@
                 </div> <!-- end of myLinks -->
             </div> <!-- end of sideNav -->
 
+            
             <div class="mainContent">
 
                 <!-- About Section -->
-                <div class="about" id="about">
+                <div class="section" id="about">
                     <h1>CÁSSIA <span>BERNARDO</span></h1>
                     <h3>cascrisbern@gmail.com</h3>
                     <p>
-                        I am an aspiring self-taught Junior Web Designer / Developer with professional background in HR
-                        and Admin. My passion for web design drove me to make a career change from HR to UX Design /
+                        I am an aspiring self-taught Junior <span class="highlight">Web Designer / Developer</span> with professional background in HR
+                        and Admin. <br />
+
+                        My passion for web design drove me to make a career change from HR to UX Design /
                         Frontend Development in 2018.
                     </p>
                     <a target="_blank" href="https://www.linkedin.com/in/c%C3%A1ssia-cristina-b-78059ab6/"><i
@@ -54,10 +57,10 @@
 
                 </div>
 
-                <hr>
+                
 
                 <!-- Skills Section -->
-                <div class="skills" id="skills">
+                <div class="section" id="skills">
                     <h2>SKILLS</h2>
                     <table>
                         <tbody>
@@ -95,33 +98,29 @@
 
                 </div> <!-- end of skills section-->
 
-                <hr>
-
                 <!-- Projects Section -->
-                <div class="projects" id="projects">
+                <div class="section" id="projects">
                     <h2>PROJECTS</h2>
 
                 </div> <!-- end of projects section -->
 
-                <hr>
-
                 <!-- Contact Section -->
-                <div class="contact" id="contact">
+                <div class="section" id="contact">
                     <h2>CONTACT ME</h2>
 
                     <form>
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="">
+                            <input type="text" id="name">
                             <label for="name">Name:</label>
 
                         </div>
                         <div class="form-group">
-                            <input type="text" id="email" placeholder="">
+                            <input type="text" id="email">
 
                             <label for="email">Email:</label>
                         </div>
                         <div class="form-group">
-                            <textarea rows="3" type="text" id="message" placeholder=""></textarea>
+                            <textarea rows="3" type="text" id="message"></textarea>
 
                             <label for="message">Message:</label>
                         </div>
@@ -137,6 +136,7 @@
 
             </div> <!-- end of mainContent -->
         </div> <!-- end of container -->
+    
 
         <script src="script.js"></script>
 

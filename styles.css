@@ -77,24 +77,26 @@ hr {
     display: flex; 
 }
 
-/* About Section */
-
-.about {
-    width: 80%;
-    margin: 30px 30px;
-}
-
-.about span {
+/* General section styles */
+.highlight {
+    font-weight: bold;
     color: #bb7171;
+
 }
 
-.about h1 {
-    font-size: 5.6rem;
-    line-height: 5.5rem;
-    margin-top: 300px;
+.section {
+    width: 95%;
+    margin: 30px 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffccff;
 }
 
-.about h3 {
+.section h2 {
+    margin-bottom: 100px;
+    margin-top:0px;
+}
+
+.section h3 {
     margin-bottom: 60px;
     font-size: 1.5rem;
     font-weight: 300;
@@ -102,10 +104,109 @@ hr {
     color: #bb7171;
 }
 
-.about p {
+.section p {
     font-size: 1.15rem;
     text-align: justify;
 }
+
+
+/* About Section */
+#about {
+    margin-top: 280px;
+}
+
+#about span {
+    color: #bb7171;
+}
+
+#about h1 {
+    font-size: 5.6rem;
+    line-height: 5.5rem;
+}
+
+
+/* Skills section */
+
+#skills td {
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+#skills table {
+    margin-bottom: 200px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#skills span {
+    color: #fdc57b;
+}
+
+
+/* Projects Section */
+
+/* Contact Section */
+
+#contact input, #contact textarea, #contact button {
+    width: 70%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px solid #868e96;
+}
+
+#contact label {
+    font-size: 1.5rem;
+
+}
+
+#contact input+label, #contact textarea+label {
+    position: absolute;
+    left: 20px;
+    transition: transform 200ms ease;
+  
+    /* You have to use this to make it clickable through*/
+    pointer-events: none;
+}
+
+#contact input:focus+label, #contact textarea:focus+label, 
+#contact input+label.freeze, #contact textarea+label.freeze {
+    transform: translateY(-1.2rem);
+    color: #bb7171;
+    font-size: 1rem;
+}
+
+#contact .form-group {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#contact textarea {
+    height: 10rem;
+}
+
+#contact button {
+    width: 100px;
+    height: 60px;;
+    border-radius: 39px;
+    color: #ffffff;
+    background-color: #d6a9a9;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#contact button:hover {
+    background: #ddb8b8;
+    text-decoration: none;
+}
+
+#contact input:focus, #contact textarea:focus{
+    outline: none;
+  }
+
 
 .social-icon {
     font-size: 3.5rem;
@@ -122,117 +223,6 @@ hr {
     margin-left: 5px;
 }
 
-/* Skill Section */
-
-.skills {
-    width: 80%;
-    margin: 30px 30px;
-}
-
-.skills h2 {
-    margin-bottom: 100px;
-    margin-top: 300px;
-}
-
-.skills td {
-    line-height: 50px;
-    font-size: 1.2rem;
-}
-
-.skills table {
-    margin-bottom: 200px;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.skills span {
-    color: #fdc57b;
-}
-
-/* Projects Section */
-
-.projects {
-    width: 80%;
-    margin: 30px 30px;
-}
-
-.projects h2 {
-    margin-bottom: 100px;
-    margin-top: 300px;
-}
-
-/* Contact Section */
-
-.contact {
-    width: 80%;
-    margin: 30px 30px;
-    border: 1px solid red;
-}
-
-.contact h2 {
-    margin-bottom: 90px;
-    margin-top: 300px;
-}
-
-.contact input, .contact textarea, .contact button {
-    width: 70%;
-    height: 2rem;
-    line-height: 2rem;
-    font-size: 1.15rem;
-    margin-bottom: 30px;
-    border: 0;
-    border-bottom: 1px solid #868e96;
-}
-
-.contact label {
-    font-size: 1.5rem;
-
-}
-
-.contact input+label, .contact textarea+label {
-    position: absolute;
-    left: 20px;
-    transition: transform 200ms ease;
-  
-    /* You have to use this to make it clickable through*/
-    pointer-events: none;
-}
-
-.contact input:focus+label, .contact textarea:focus+label, 
-.contact input+label.freeze, .contact textarea+label.freeze {
-    transform: translateY(-1.2rem);
-    color: #bb7171;
-    font-size: 1rem;
-}
-
-.contact .form-group {
-    position: relative;
-    margin-bottom: 5px;
-}
-
-.contact textarea {
-    height: 10rem;
-}
-
-.contact button {
-    width: 10%;
-    padding: 10px 20px 30px 20px;
-    border-radius: 39px;
-    color: #ffffff;
-    background-color: #d6a9a9;
-    font-size: 1.15rem;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-.contact button:hover {
-    background: #ddb8b8;
-    text-decoration: none;
-}
-
-.contact input:focus, .contact textarea:focus{
-    outline: none;
-  }
 
 
 /* Footer */
