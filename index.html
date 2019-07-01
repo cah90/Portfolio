@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="styles.css">
 
         <!-- jQuery Script -->
-
         <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
@@ -29,22 +28,23 @@
             <div class="sideNav" id="sideNav">
                 <img src="images/cassia.jpeg" alt="profile photo">
                 <div class="myLinks">
-                    <a href="#about">About</a>
+                    <a class="active" href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div> <!-- end of myLinks -->
             </div> <!-- end of sideNav -->
 
-            
+
             <div class="mainContent">
 
                 <!-- About Section -->
                 <div class="section" id="about">
-                    <h1>CÁSSIA <span>BERNARDO</span></h1>
+                    <h1>CÁSSIA <span class="highlight">BERNARDO</span></h1>
                     <h3>cascrisbern@gmail.com</h3>
                     <p>
-                        I am an aspiring self-taught Junior <span class="highlight">Web Designer / Developer</span> with professional background in HR
+                        I am an aspiring self-taught Junior <span class="highlight">Web Designer / Developer</span> with
+                        professional background in HR
                         and Admin. <br />
 
                         My passion for web design drove me to make a career change from HR to UX Design /
@@ -56,8 +56,6 @@
                             class="social-icon fab fa-github-square"></i></a>
 
                 </div>
-
-                
 
                 <!-- Skills Section -->
                 <div class="section" id="skills">
@@ -111,18 +109,16 @@
                     <form>
                         <div class="form-group">
                             <input type="text" id="name">
-                            <label for="name">Name:</label>
+                            <label for="name">Name</label>
 
                         </div>
                         <div class="form-group">
                             <input type="text" id="email">
-
-                            <label for="email">Email:</label>
+                            <label for="email">Email</label>
                         </div>
                         <div class="form-group">
                             <textarea rows="3" type="text" id="message"></textarea>
-
-                            <label for="message">Message:</label>
+                            <label for="message">Message</label>
                         </div>
 
                         <button type="button">Send</button>
@@ -136,10 +132,10 @@
 
             </div> <!-- end of mainContent -->
         </div> <!-- end of container -->
-    
+
 
         <script src="script.js"></script>
 
-    </body>
+    </bodydata-target="#sideNav">
 
 </html>

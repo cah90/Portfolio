@@ -1,46 +1,65 @@
 $( document ).ready( function () {
 
+    //Scroll of the page
+   
     $( "a" ).on( "click", function ( event ) {
-    
-            var hash = this.hash;
-            console.log('this is, see below');
-            console.log(this);
-            console.log('this.hash is see below');
-            console.log(this.hash);
 
-            if ( hash !== "" ) {
-                event.preventDefault();
-// hash is '#about'
-var mySelection = $(hash);
-console.log(mySelection);
-                var myTop;
+        var hash = this.hash;
+        console.log( 'this is, see below' );
+        console.log( this );
+        console.log( 'this.hash is see below' );
+        console.log( this.hash );
 
-                if (hash == '#about') {
-                    // if we clicked on about, we scroll to 250px from the top, which is the same as the profile image distance from top
-                    myTop = 0;
-                } else {
-                    // otherwise, if for example hash is '#contact', we scroll to the top of the element with id "contact"
-                    myTop = $(hash).offset().top;
-                }
+        if ( hash !== "" ) {
+            event.preventDefault();
+            // hash is '#about'
+            var mySelection = $( hash );
+            console.log( mySelection );
+            var myTop;
 
-               $("html, body").animate(
-                   {
-                       scrollTop: myTop
-                   }, 700, function(){
-                       console.log("last function executed");
-                   }
-               );
-        
+            if ( hash == '#about' ) {
+                // if we clicked on about, we scroll to 250px from the top, which is the same as the profile image distance from top
+                myTop = 0;
+            } else {
+                // otherwise, if for example hash is '#contact', we scroll to the top of the element with id "contact"
+                myTop = $( hash ).offset().top;
             }
 
+            $( "html, body" ).animate( {
+                scrollTop: myTop
+            }, 700, function () {
+                console.log( "last function executed" );
+            } );
+
+        }
+
+    } );
+    
+    //Scrollspy
+
+(function(){
+    var section = $(".section");
+    var sections = {};
+    var i = 0;
+
+    Array.prototype.forEach.call(section, function(e) {
+        sections[e.id] = e.offsetTop;
     });
 
+    window.onscroll = function() {
+        var scrollPosition = 
+        document.documentElement.scrollTop || document.body.scrollTop;
 
-
-
-
-
-    /*Form*/
+    for (i in sections) {
+      if (sections[i] <= scrollPosition) {
+        document.querySelector('.active').setAttribute('class', ' ');
+        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+      }
+    }
+  };
+})();
+    
+    //Form
 
     var formGroups = $( ".form-group" );
 
@@ -71,8 +90,6 @@ console.log(mySelection);
 
         }
 
-
-
         generalInput.change( function () {
             console.log( "checkInput part" );
             checkInput();
@@ -81,3 +98,6 @@ console.log(mySelection);
     } ); /*form-group each*/
 
 } ); /*document ready)*/
+
+
+
