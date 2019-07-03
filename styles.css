@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 
@@ -90,6 +91,11 @@ p {
     line-height: 5.5rem;
 }
 
+#about p {
+    line-height: 30px;
+    width: 68%;
+}
+
 .social-icon {
     font-size: 3.5rem;
     margin-top: 100px;
@@ -165,6 +171,20 @@ p {
 
 /* Projects Section */
 
+#containerProjects {
+    display: flex;
+}
+
+#containerProjects img {
+   width: 450px;
+   border: 1px solid #ddb8b8;
+   margin-bottom: 400px;
+   margin-right: 60px;
+}
+
+#containerProjects a:last-child {
+    visibility: hidden;
+}
 
 
 /* Contact Section */
@@ -220,11 +240,11 @@ p {
 
 #contact button {
     width: 100px;
-    height: 60px;
     border-radius: 39px;
     color: #ffffff;
     background-color: #d6a9a9;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 150px;
 
