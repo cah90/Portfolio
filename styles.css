@@ -75,11 +75,49 @@ p {
     text-align: justify;
 }
 
+/* Side Nav */
+
+.sideNav {
+    width: 16.66%;
+    background-color: #bb7171;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+}
+
+.sideNav img {
+    border-radius: 100%;
+    width: 180px;
+    border: 10px solid #d6a9a9;
+    margin-top: 200px;
+    margin-bottom: 50px
+}
+
+.myLinks a {
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    color: #e3c6c6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.myLinks a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.myLinks .active {
+    color: #ffffff;
+}
+
 
 /* About Section */
 
 #about {
-    margin-top: 280px;
+    margin-top: 230px;
 }
 
 #about span {
@@ -110,46 +148,6 @@ p {
 .fa-github-square {
     margin-left: 5px;
 }
-
-/* Side Nav */
-
-.sideNav {
-    width: 16.66%;
-    background-color: #bb7171;
-    text-align: center;
-    position: fixed;
-    height: 100%;
-}
-
-.sideNav img {
-    border-radius: 100%;
-    width: 180px;
-    border: 10px solid #d6a9a9;
-    margin-top: 250px;
-    margin-bottom: 50px
-}
-
-.myLinks a {
-    text-decoration: none;
-    display: block;
-    font-weight: bold;
-    line-height: 40px;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    color: #e3c6c6;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.myLinks a:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.myLinks .active {
-    color: #ffffff;
-}
-
-
 
 /* Skills section */
 
@@ -247,7 +245,6 @@ p {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 150px;
-
 }
 
 #contact button:hover {
