@@ -269,3 +269,10 @@ footer {
     color: #ff00c8;
     font-size: 1.2rem;
 }
+
+#debugScrollPosition {
+    font-weight: bold;
+    font-size: 2em;
+    position:fixed;
+    height: 40px;
+}

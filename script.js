@@ -38,20 +38,26 @@ $( document ).ready( function () {
     //Scrollspy
 
 (function(){
-    var section = $(".section");
+    var jqSections = $(".section");
     var sections = {};
     var i = 0;
 
-    Array.prototype.forEach.call(section, function(e) {
+    Array.prototype.forEach.call(jqSections, function(e) { //"e" becomes every div with the class section.
+        console.log(e);
         sections[e.id] = e.offsetTop;
+    
     });
 
+    console.log(sections);
+
     window.onscroll = function() {
-        var scrollPosition = 
-        document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollPositionPlusGap = scrollPosition + 50;
+        // $("#debugScrollPosition").html(scrollPosition + ' (plus gap is : '+scrollPositionPlusGap + ')');
+
 
     for (i in sections) {
-      if (sections[i] <= scrollPosition) {
+      if (sections[i] <= scrollPositionPlusGap) {
         document.querySelector('.active').setAttribute('class', ' ');
         document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
       }
