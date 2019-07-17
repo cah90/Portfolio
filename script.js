@@ -5,10 +5,10 @@ $( document ).ready( function () {
     $( "a" ).on( "click", function ( event ) {
 
         var hash = this.hash;
-        console.log( 'this is, see below' );
-        console.log( this );
-        console.log( 'this.hash is see below' );
-        console.log( this.hash );
+        // console.log( 'this is, see below' );
+        // console.log( this );
+        // console.log( 'this.hash is see below' );
+        // console.log( this.hash );
 
         if ( hash !== "" ) {
             event.preventDefault();
@@ -28,7 +28,6 @@ $( document ).ready( function () {
             $( "html, body" ).animate( {
                 scrollTop: myTop
             }, 700, function () {
-                console.log( "last function executed" );
             } );
 
         }
