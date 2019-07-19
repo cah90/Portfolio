@@ -104,26 +104,23 @@ $( document ).ready( function () {
 
     //Modal box for projects section
 
-    var modal = $(".modal");
-    var trigger = $(".trigger");
-    var closeButton = $(".closeButton");
+    $(".trigger").on("click", function toggleModal() {
+        $(".modal").addClass("showModal");
+     });
 
-    function toggleModal() {
-        modal.addClass("showModal");
+    $(".closeButton").on("click", function removeToggle(){
+        $(".modal").removeClass("showModal");
+    });
 
-    }
-
-    function windowOnClick(event){
-        if (event.target === modal) {
+    $(window).on("click",function windowOnClick(event){
+        if (event.target === $(".modal")) {
             toggleModal();
         }
-    }
+    });
+
+   
 
     
-    trigger.on("click", toggleModal);
-    closeButton.on("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-
 } ); /*document ready)*/
 
 

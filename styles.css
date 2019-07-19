@@ -174,7 +174,8 @@ p {
 }
 
 #containerProjects img {
-   width: 450px;
+   width: 400px;
+   height: 300px;
    border: 1px solid #ddb8b8;
    margin-bottom: 400px;
    margin-right: 60px;
@@ -200,8 +201,18 @@ p {
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     padding: 1rem 1.5rem;
-    width: 24rem;
+    width: 60%;
     border-radius: 0.5rem;
+}
+
+.modalContent img {
+    width: 70%;
+    border: 1px solid #ddb8b8;
+}
+
+.modalContent img, .modalContent p {
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .closeButton {
@@ -211,12 +222,15 @@ p {
     text-align: 1.5rem;
     cursor: pointer;
     border-radius: 0.25rem;
-    background-color: #868e96; 
+    background-color: #5b6167;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
 
 }
 
 .closeButton:hover {
-    background-color: #5b6167;
+    background-color: #868e96; 
 }
 
 .showModal {
@@ -315,9 +329,9 @@ footer {
     font-size: 1.2rem;
 }
 
-#debugScrollPosition {
+/* #debugScrollPosition {
     font-weight: bold;
     font-size: 2em;
     position:fixed;
     height: 40px;
-}
+} */
