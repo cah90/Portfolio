@@ -96,11 +96,33 @@ $( document ).ready( function () {
         }
 
         generalInput.change( function () {
-            console.log( "checkInput part" );
+            // console.log( "checkInput part" );
             checkInput();
         } ); /*generalInput*/
 
     } ); /*form-group each*/
+
+    //Modal box for projects section
+
+    var modal = $(".modal");
+    var trigger = $(".trigger");
+    var closeButton = $(".closeButton");
+
+    function toggleModal() {
+        modal.addClass("showModal");
+
+    }
+
+    function windowOnClick(event){
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    
+    trigger.on("click", toggleModal);
+    closeButton.on("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
 
 } ); /*document ready)*/
 
