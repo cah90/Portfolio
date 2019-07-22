@@ -105,22 +105,19 @@ $( document ).ready( function () {
     //Modal box for projects section
 
     $(".trigger").on("click", function toggleModal() {
-        $(".modal").addClass("showModal");
+        var trigger = $(this).data("image");
+        $(trigger).addClass("showModal");
      });
 
-    $(".closeButton").on("click", function removeToggle(){
-        $(".modal").removeClass("showModal");
-    });
-
-    $(window).on("click",function windowOnClick(event){
-        if (event.target === $(".modal")) {
-            toggleModal();
+    $(".modal").on("click", function(e){
+        clickedElement = e.target;
+        console.log(clickedElement);
+        console.log(clickedElement.className);
+        if (clickedElement.className == 'modal showModal' || clickedElement.className == 'closeButton') {
+            $(".modal").removeClass("showModal");
         }
-    });
-
-   
-
-    
+ 
+    }); 
 } ); /*document ready)*/
 
 
