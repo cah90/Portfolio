@@ -104,9 +104,9 @@ $( document ).ready( function () {
 
     //Modal box for projects section
 
-    $(".trigger").on("click", function toggleModal() {
-        var trigger = $(this).data("image");
-        $(trigger).addClass("showModal");
+    $(".clickable").on("click", function toggleModal() {
+        var clickable = $(this).data("image");
+        $(clickable).addClass("showModal");
      });
 
     $(".modal").on("click", function(e){
