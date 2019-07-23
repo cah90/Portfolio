@@ -239,19 +239,26 @@ p {
     background-color: #868e96;
 }
 
+.showModal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 .sub-container {
     position: relative;
-    display: block;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    /* display: block; */
+    /* height: auto; */
+    /* transition: .5s ease; */
+    /* backface-visibility: hidden; */
     cursor: pointer;
     margin-right: 60px;
 
 }
 
 .clickable {
-    transition: .5s ease;
+    /* transition: .5s ease; */
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -281,13 +288,6 @@ p {
 
 }
 
-
-.showModal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
 
 
 /* Contact Section */
