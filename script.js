@@ -118,7 +118,19 @@ $( document ).ready( function () {
         }
  
     }); 
-} ); /*document ready)*/
+
+    // Responsive Menu
+    $(function() {
+        $("#mySideNav").on("click", function() {
+            $("#menu-mobile").toggle();
+        });
+    });
+
+
+
+
+
+   }); /*document ready*/
 
 
 
