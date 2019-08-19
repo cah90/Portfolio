@@ -126,11 +126,37 @@ $( document ).ready( function () {
         });
     });
 
+    // Form Validation
 
+    $( "#submit" ).on( "click", async function ( event ) {
+        event.preventDefault();
 
-
+        await main();
+    } );
 
    }); /*document ready*/
 
+   async function main() {
+
+
+    var formData = new FormData();
+    formData.append('name', $("#name").val());
+    formData.append('email', $("#email").val());
+    formData.append('message', $("#message").val());
+
+
+    var response = await fetch( "https://cassiabernardo.com/processForm.php", {
+        method: "POST",
+        body: formData
+    } );
+
+    var responseText = await response.text();
+    console.log(responseText);
+
+    $("#contact .confirmation-message").html(responseText);
+    $("#contact .confirmation-message").addClass("show");
+
+    
+}
 
 

@@ -306,6 +306,20 @@ p {
     border: none;
 }
 
+#contact .confirmation-message {
+    margin-bottom: 30px;
+    background-color: #d6a9a9;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: inline-block;
+    visibility: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.show {
+    visibility: visible !important;
+}
+
 #contact input,
 #contact textarea,
 #contact button {
