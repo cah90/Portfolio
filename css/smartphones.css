@@ -1,15 +1,65 @@
 @media only screen and (min-width:300px) and (max-width:1080px) {
 
+    .mainContent {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .section {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* .section p {
+        font-size: 1.5rem;
+    }
+
+    #about h1 {
+        font-size: 6.6rem;
+    }
+
+    #about h3 {
+        font-size: 1.9rem;
+    } */
+
+    /* Menu */
 
     .sideNav {
         position: fixed;
-        height: 65px;
+        height: 100px;
         width: 100%;
         z-index: 1;
     }
 
     .sideNav img {
         display: none;
+    }
+
+    #menu-btn {
+        display: block;
+        font-size: 2.5rem;
+        color: white;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+
+    #menu-mobile,
+    #menu-btn {
+        visibility: visible;
+    }
+
+    .menu-name {
+        display: block;
+        color: white;
+        position: absolute;
+        left: 20px;
+        top: 35px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.2px;
+        font-size: 1.7rem;
     }
 
     #menu-desktop {
@@ -35,36 +85,35 @@
         letter-spacing: 2px;
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
-
     }
 
     #menu-mobile a:hover {
         color: #d6a9a9;
     }
 
-    #menu-btn {
+    /* Skills */
+
+    /* #skills td {
+        font-size: 1.5rem;
+    } */
+
+    /* Projects Section */
+
+    #containerProjects {
         display: block;
-        font-size: 2.5rem;
-        color: white;
-        position: absolute;
-        right: 20px;
-        top: 10px;        
     }
 
-    .menu-name {
-        display: block;
-        color: white;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1.2px;
-        font-size: 1.2rem;
+    #containerProjects img {
+        margin-bottom: 50px;
+    }
+
+    .clickable {
+        display: none;
+
     }
 
 
 
-    
-    
+
 
 }

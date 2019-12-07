@@ -126,7 +126,7 @@ $( document ).ready( function () {
         });
     });
 
-    // Form Validation
+    // Form Submit
 
     $( "#submit" ).on( "click", async function ( event ) {
         event.preventDefault();

@@ -116,7 +116,7 @@ p {
 }
 
 #menu-mobile, #menu-btn {
-    display: none;
+    visibility: hidden;
 }
 
 .menu-name {
@@ -164,7 +164,7 @@ p {
 
 #skills td {
     line-height: 50px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 #skills table {
